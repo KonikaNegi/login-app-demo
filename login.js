@@ -1,7 +1,7 @@
-// Login function
+// KON-1: updated auth logic
 function login(username, password) {
-  if (username && password) {
-    return "Login successful";
+  if (!username || !password) {
+    return "Error: credentials required";
   }
-  return "Login failed";
+  return "Login successful";
 }
